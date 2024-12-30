@@ -24,7 +24,8 @@ Este proyecto es una API RESTful construida con Node.js, TypeScript, JWT para au
 
 2. Instalar dependencias:
 
-   ```npm install
+   ```bash
+   npm install
 
    ```
 
@@ -34,19 +35,22 @@ Este proyecto es una API RESTful construida con Node.js, TypeScript, JWT para au
 
 4. Iniciar los servicios de Docker:
 
-   ```bash docker-compose up -d
+   ```bash
+   docker-compose up -d
 
    ```
 
 5. Ejecutar las migraciones de Prisma:
 
-   ```npx prisma migrate dev
+   ```bash
+   npx prisma migrate dev
 
    ```
 
 6. Correr el proyecto:
 
-   ```npm run dev
+   ```bash
+   npm run dev
 
    ```
 
@@ -55,9 +59,10 @@ Este proyecto es una API RESTful construida con Node.js, TypeScript, JWT para au
 El servidor estará disponible en http://localhost:3000.
 
 Endpoints
-POST /auth/register - Registrar un nuevo usuario
-POST /auth/login - Iniciar sesión
-GET /user - Obtener todos los usuarios (requiere autenticación)
-GET /user/:id - Obtener un usuario por ID (requiere autenticación)
-PUT /user/:id - Editar un usuario por ID (requiere autenticación)
-DELETE /user/:id - Eliminar un usuario por ID (requiere autenticación)
+
+- **POST /auth/register** - Registrar un nuevo usuario
+- **POST /auth/login** - Iniciar sesión
+- **GET /user** - Obtener todos los usuarios (requiere autenticación)
+- **GET /user/:id** - Obtener un usuario por ID (requiere autenticación)
+- **PUT /user/:id** - Editar un usuario por ID (requiere autenticación)
+- **DELETE /user/:id** - Eliminar un usuario por ID (requiere autenticación)
